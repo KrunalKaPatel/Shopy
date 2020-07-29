@@ -1,0 +1,22 @@
+/* font-face start
+----------------------------*/
+@font-face
+{ 
+	font-family: 'Harmonia Sans W01 Regular';
+	src:url('../fonts/Harmonia Sans W01 Regular.eot') format('eot'), 
+		url('../fonts/Harmonia Sans W01 Regular.svg') format('svg'), 	
+		url('../fonts/Harmonia Sans W01 Regular.ttf') format('ttf'), 
+		url('../fonts/Harmonia Sans W01 Regular.woff') format('woff'), 
+		url('../fonts/Harmonia Sans W01 Regular.woff2') format('woff2');
+		font-weight: 400;
+}
+
+@font-face
+{ 
+	font-family: 'Harmonia Sans W06 Bold Cond';
+	src:url('../fonts/Harmonia Sans W06 Bold Cond.eot') format('eot'), 
+		url('../fonts/Harmonia Sans W06 Bold Cond.svg') format('svg'), 	
+		url('../fonts/Harmonia Sans W06 Bold Cond.ttf') format('ttf'), 
+		url('../fonts/Harmonia Sans W06 Bold Cond.woff') format('woff'), 
+		url('../fonts/Harmonia Sans W06 Bold Cond.woff2') format('woff2');
+}
