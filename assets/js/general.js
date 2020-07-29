@@ -31,6 +31,8 @@ $(document).ready(function(){
 		slidesToShow:1,
 		slidesToScroll: 1,
 		arrow: false,
-		dots: false
+		dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000
 	});
 });
