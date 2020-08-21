@@ -1,0 +1,139 @@
+@import "fonts.css";
+
+
+.Mainproduct
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #f4f6f8;	
+	padding: 128px 0px;
+}
+.Mainproduct .container
+{
+	display: flex;
+}
+.left-menu
+{
+	width: 100%;
+	max-width: 23%;
+	display: flex;
+	flex-direction: column;
+}
+.left-menu .left-menu-heading h3
+{
+	font-size: 18px;
+	color: #ff5912;
+	font-family: Harmonia Sans W01 Regular;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.left-menu ul,.left-menu ul li
+{
+	display: block;
+}
+.left-menu .left-menu-padding
+{
+	background-color: #fff;
+	width: 100%;
+	padding: 36px 0px;
+	padding-left: 41px;
+	margin-bottom: 20px;
+}
+.left-menu .left-menu-padding:last-child 
+{
+    margin-bottom: 0px;
+}
+.left-menu .categories ul li
+{
+    margin-bottom: 25px;
+}
+.left-menu .categories ul li a
+{
+    font-size: 16px;
+    color: #34404b;
+    font-weight: bold;
+    font-family: Harmonia Sans W01 Regular;
+}
+.left-menu .categories ul li a:hover
+{
+	color: #ff5912;
+}
+.left-menu .categories ul li:last-child
+{
+	margin-bottom: 0px;
+}
+.left-menu .price-filter .prize-range
+{
+	display: flex;
+}
+.left-menu .price-filter .prize-range input
+{
+	height: 20px;
+	width: 30px;
+	background-color: #edf0f2;
+	margin-left: 15px;
+}
+
+
+/* Customize Radio Button
+------------------------------*/
+.radio-but {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #34404b;
+    font-weight: bold; 
+	font-family: Harmonia Sans W01 Regular;
+}
+.radio-but:last-child
+{
+	margin-bottom: 0px;
+}
+.radio-but input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+.radio-but:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radio-but input:checked ~ .checkmark {
+  background-color: #ff5912;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio-but input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio-but .checkmark:after {
+ 	padding: 5px;
+    top: 5px;
+    left: 5px;
+	background: white;
+}
+/* Customize Radio Button Ends*/
+.right-product
+{
+	width: 100%;
+	max-width: 77%;
+	padding-left: 31px;
+}
+.right-product .card .card-inner 
+{
+	margin-bottom: 30px;
+}

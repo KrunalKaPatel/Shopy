@@ -54,6 +54,10 @@ p{ margin:0; padding:0}
     line-height: 30px;
     color: #495662;
 }
+.slick-initialized .slick-slide
+{
+	outline: none;
+}
 
 /* Header Section
 ------------------------------*/
@@ -145,9 +149,12 @@ p{ margin:0; padding:0}
 	{
 		margin-right: 81px;
 	}
-	.pageHeader .lowerHeader .big-header .menu
+	.pageHeader .lowerHeader .big-header .big-menu
 	{
-		margin-right: 378px;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.pageHeader .lowerHeader .big-header .menu ul li a
 	{
@@ -287,6 +294,21 @@ p{ margin:0; padding:0}
 button.slick-arrow {
     display: none !important;
 }
+/*ul.slick-dots li button
+{
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	height: 50px;
+	width: 15px;
+	text-indent: 100px;
+	overflow: hidden;
+	border: none;
+	background-color: #fff; 
+}
+button#slick-slide-control01 {
+    top: 60%;
+}*/
 
 
 /* New Arrival Section
@@ -300,40 +322,41 @@ button.slick-arrow {
 	padding-bottom: 30px;
 	background-color: #f4f6f8;
 }
-.arrival-bg .cloth-collection .card
+.card
 {
     display: flex;
     flex-wrap: wrap;
     margin: 0px -15px;
 }
-.arrival-bg .cloth-collection .card .display-25
+.card .card-inner
 {
     padding: 0px 15px;
 }
-.arrival-bg .cloth-collection .card .display-25:hover .cloth-img {
+.card .card-inner:hover .cloth-img {
     margin-top: -64px;
 }
-.arrival-bg .cloth-collection .card .display-25:hover .prize a {
+.card .card-inner:hover .prize a {
     display: none;
 }
-.arrival-bg .cloth-collection .card .display-25:hover img {
+.card .card-inner:hover img {
     width: 41%;
     margin-top: 71px;
 }
-.arrival-bg .cloth-collection .card .display-25:hover .cloth-detail h4
+.card .card-inner:hover .cloth-detail h4
 {
 	margin-bottom: 14px;
 	color: #ff5912;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail {
+.card .card-inner .cloth-detail {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 365px;
+    width: 100%;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail h4
+.card .card-inner .cloth-detail h4
 {
 	margin-bottom: 25px;
 	font-size: 18px;
@@ -341,7 +364,7 @@ button.slick-arrow {
 	font-weight: bold;
 	font-family: Harmonia Sans W01 Regular;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .prize a
+.card .card-inner .cloth-detail .prize a
 {
 	font-size: 18px;
 	color: #ff5912;
@@ -349,29 +372,29 @@ button.slick-arrow {
 	font-family: Harmonia Sans W01 Regular;
 }
 
-.arrival-bg .cloth-collection .card .display-25 figure
+.card .card-inner figure
 {
 	text-align: center;
 }
 
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-img
+.card .card-inner .cloth-detail .cloth-img
 {
 	margin-bottom: 23px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover
+.card .card-inner .cloth-detail .cloth-hover
 {
 	display: none;
 	text-align: center;
 }
-.arrival-bg .cloth-collection .card .display-25:hover .cloth-detail
+.card .card-inner:hover .cloth-detail
 {
 	filter: drop-shadow(0px 5px 7.5px rgba(0,0,0,0.1));
 }
-.arrival-bg .cloth-collection .card .display-25:hover .cloth-detail .cloth-hover
+.card .card-inner:hover .cloth-detail .cloth-hover
 {
 	display: block;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color
+.card .card-inner .cloth-detail .cloth-hover .size-color
 {
 	border-bottom: 1px solid #f2f4f7;
     text-align: center;
@@ -379,11 +402,11 @@ button.slick-arrow {
     padding-bottom: 26px;
     margin-bottom: 31px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover ul li a
+.card .card-inner .cloth-detail .cloth-hover ul li a
 {
 	display: inline;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-size
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-size
 {
 	font-size: 14px;
 	color: #34404b;
@@ -391,54 +414,54 @@ button.slick-arrow {
 	font-weight: bold;	
 	margin-bottom: 27px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-size a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-size a
 {
 	font-size: 14px;
 	color: #34404b;
 	font-family: Harmonia Sans W01 Regular;
 	font-weight: bold;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li a
 {
 	height: 13px;
 	width: 13px;
 	border-radius: 100%;
 	display: inline-block;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-size a:hover
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-size a:hover
 {
 	color: #ff5912;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li
 {
 	padding: 0px 1px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(1) a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(1) a
 {
 	background-color: #e12e3f;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(2) a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(2) a
 {
 	background-color: #34404b;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(3) a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(3) a
 {
 	background-color: #3ab3ff;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(4) a
+.card .card-inner .cloth-detail .cloth-hover .size-color .cloth-color ul li:nth-child(4) a
 {
 	background-color: #2fd967;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .cloth-list ul li 
+.card .card-inner .cloth-detail .cloth-hover .cloth-list ul li 
 {
     padding: 0px 15px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .cloth-list a
+.card .card-inner .cloth-detail .cloth-hover .cloth-list a
 {
 	color: #34404b;
 	font-size: 18px;
 }
-.arrival-bg .cloth-collection .card .display-25 .cloth-detail .cloth-hover .cloth-list a:hover
+.card .card-inner .cloth-detail .cloth-hover .cloth-list a:hover
 {
 	color: #ff5912;
 }
@@ -856,10 +879,6 @@ input[type="submit"]:hover
 	{
  	   margin-right: 30px;
 	}
-	.pageHeader .lowerHeader .big-header .menu 
-	{
-    	margin-right: 330px;
-	}
 	.sales-bg .sales-section .combo
 	{
 		padding: 3px 30px;
@@ -871,10 +890,6 @@ input[type="submit"]:hover
 }
 @media(max-width: 1100px)
 {
-	.pageHeader .lowerHeader .big-header .menu
-	{
-		margin-right: 250px;
-	}
 	.sales-bg .sales-section .combo figure img
 	{
 		margin-right: 30px;
@@ -888,22 +903,11 @@ input[type="submit"]:hover
 		padding-left: 0px;
 	}
 }
-@media(max-width: 1025px)
-{
-	.pageHeader .lowerHeader .big-header .menu
-	{
-		margin-right: 220px;
-	}
-}
 @media(max-width: 992px)
 {
 	.pageHeader .lowerHeader .big-header .logo 
 	{
     	margin-right: 20px;
-	}
-	.pageHeader .lowerHeader .big-header .menu 
-	{
-    	margin-right: 70px;
 	}
 	.pageHeader .lowerHeader .big-header .menu ul li 
 	{
@@ -914,7 +918,7 @@ input[type="submit"]:hover
 	{
 		padding: 50px 0px;
 	}
-	.arrival-bg .cloth-collection .card .display-25 
+	.card .card-inner 
 	{
     	flex: 0 0 50%;
     	margin-bottom: 30px;
@@ -1022,7 +1026,7 @@ input[type="submit"]:hover
 	    margin-bottom: 10px;
 	}
 
-	.arrival-bg .cloth-collection .card .display-25
+	.card .card-inner
 	{
 		flex: 0 0 100%;
 	}
@@ -1098,7 +1102,7 @@ input[type="submit"]:hover
 	{
     	padding: 30px 0px;
 	}
-	.arrival-bg .cloth-collection .card .display-25:last-child 
+	.card .card-inner:last-child 
 	{
     	margin-bottom: 0;
 	}
